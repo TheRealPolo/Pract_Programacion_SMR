@@ -22,3 +22,5 @@ def conversor_divisas():
         print("¡¡¡SOLO HAY 4 MONEDAS DISPONIBLES!!!.")
 
     print(f"{cantidad} USD equivale a {resultado} {moneda}")
+
+conversor_divisas()
