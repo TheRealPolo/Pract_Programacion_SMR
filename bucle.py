@@ -1,6 +1,10 @@
-# IMPRIMIR TABLA DE ULTIPLICAR DEL 1 AL 9
+cantidad = float(input("Ingrese la cantidad de dinero: "))
 
-for x in range(1, 11):
-    for y in range(1, 11):
-        print(f"{x} x {y} = {x * y}")
-    print()  # Imprimir una linea en blanco despues él de de cada tabla de multiplicar
+while opcion in [1, 2]:
+    opcion = int(input("Ingrese 1 para aplicar interés, 2 para aplicar cargo, o 0 para salir: "))
+    if opcion == 1:
+        cantidad += cantidad * 0.05
+        print("Se ha aplicado un interés del 5%. Nuevo saldo:", cantidad)
+    elif opcion == 2:
+        cantidad -= cantidad * 0.02
+        print("Se ha aplicado un cargo del 2%. Nuevo saldo:", cantidad)
